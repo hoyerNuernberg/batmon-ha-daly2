@@ -13,11 +13,13 @@ def get_bms_model_class(name):
     import bmslib.models.sok
     import bmslib.models.supervolt
     import bmslib.models.victron
+    import bmslib.models.daly2
 
     import bmslib.group
 
     bms_registry = dict(
         daly=bmslib.models.daly.DalyBt,
+        daly2=bmslib.models.daly2.JbdBt,
         jbd=bmslib.models.jbd.JbdBt,
         jk=bmslib.models.jikong.JKBt,
         ant=bmslib.models.ant.AntBt,
